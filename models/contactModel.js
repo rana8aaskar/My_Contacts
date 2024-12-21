@@ -1,6 +1,4 @@
-const mongoose = require("mongoose")
-
-const contactSchema = mongoose.Schema({
+({
     name: {
         type:String,
         required: [true,"Please add the contact name"],
@@ -18,4 +16,6 @@ const contactSchema = mongoose.Schema({
     timestamps: true,
 });
 
-module.exports = mongoose.model("contact",contactSchema);
+module.exports = mongoose.model("contact",contactSchema);const mongoose = require("mongoose")
+
+const contactSchema = mongoose.Schema
