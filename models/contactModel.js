@@ -1,4 +1,7 @@
-({
+
+const mongoose = require("mongoose")
+
+const contactSchema = mongoose.Schema({
     name: {
         type:String,
         required: [true,"Please add the contact name"],
@@ -16,6 +19,4 @@
     timestamps: true,
 });
 
-module.exports = mongoose.model("contact",contactSchema);const mongoose = require("mongoose")
-
-const contactSchema = mongoose.Schema
+module.exports = mongoose.model("contact",contactSchema);
